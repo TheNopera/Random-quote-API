@@ -23,9 +23,13 @@ Fonts.forEach(Fonts => {
 })
 
 const quotes = [];
+router.get('/', async(req,res)=>{
+    res.json('Welcome to random quote API')
+})
+
 
 // Get all
-router.get('/', async (req, res) => {
+router.get('/quotes', async (req, res) => {
     try {
         res.status(200).json(quotes);
     } catch (error) {
