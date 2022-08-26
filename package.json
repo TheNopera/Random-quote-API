@@ -4,7 +4,7 @@
   "description": "A quote API, made with web scrapping",
   "main": "app.js",
   "scripts": {
-    "devStart": "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "author": "Daniel Ishida",
   "license": "ISC",
