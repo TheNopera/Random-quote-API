@@ -10,7 +10,7 @@ app.use(express.json())
 const quotesRouter = require('./routes/quotes');
 app.use('/', quotesRouter);
 
-app.listen(PORT, () => console.log(`Server is now running on PORT ${PORT}`));
+app.listen(process.env.PORT || PORT, () => console.log(`Server is now running on PORT ${PORT}`));
 
 
 
